@@ -1,0 +1,53 @@
+.cabecalho {
+  height: 56px;
+  background-color: #f1f1f1;
+}
+
+.menu {
+  height: 100%;
+}
+
+.menu__lista {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.menu__item {
+  align-items: center;
+  display: flex;
+}
+
+.menu__link {
+  border-bottom: 2px solid transparent;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  transition: border 90ms ease-in-out;
+}
+.menu__link:hover {
+  border-bottom-color: #0073e6;
+}
+
+.menu__link.ativo {
+  color: #0073e6;
+  border-bottom-color: #0073e6;
+}
+
+@media screen and (min-width: 600px) {
+  .cabecalho {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 905px) {
+  .cabecalho {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .menu {
+    margin: 0 auto;
+    width: 1040px;
+  }
+}

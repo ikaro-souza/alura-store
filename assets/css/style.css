@@ -1,0 +1,49 @@
+.app {
+  background: #f1f1f1;
+  display: grid;
+  font-family: "Noto Sans", -apple-system, Arial, Helvetica, sans-serif;
+  grid-template-areas:
+    "cabecalho"
+    "conteudo"
+    "rodape";
+  grid-template-columns: auto;
+  grid-template-rows: 56px auto auto;
+}
+.app > * {
+  padding: 0 1rem;
+}
+
+.cabecalho {
+  grid-area: cabecalho;
+}
+
+.conteudo {
+  grid-area: conteudo;
+}
+
+.rodape {
+  grid-area: rodape;
+}
+
+@media screen and (min-width: 600px) {
+  .app > * {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 905px) {
+  .app > * {
+    padding: 0;
+  }
+
+  .conteudo {
+    justify-self: center;
+    width: 840px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .conteudo {
+    width: 1040px;
+  }
+}

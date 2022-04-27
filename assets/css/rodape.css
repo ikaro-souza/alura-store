@@ -1,0 +1,15 @@
+.rodape {
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 905px) {
+}
+
+@media screen and (min-width: 1240px) {
+}
